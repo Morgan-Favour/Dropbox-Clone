@@ -1,0 +1,791 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;  
+}
+section{
+    display: block;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.btn{
+    background-color: #0057e5;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.logo{
+    width: 6rem;
+}
+.company-logo{
+    display: flex;
+}
+
+.company-logo h2{
+    color: black;
+    padding-top: 1rem;
+    margin-left: -1rem;
+}
+.home-nav-link{
+    display: none;
+}
+.primary-header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding-bottom: .5rem;
+    z-index: 10;
+}
+.primary-navigation{ 
+    padding: .5rem;
+}
+.primary-navigation ul{
+    display: flex;  
+}
+.primary-navigation li{
+    font-size: 1.2rem;
+}
+.mobile-nav-toggle{
+    display: none;
+}
+.nav-links{
+    margin-top: 1rem;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.nav-links a{
+    margin-right: 1.5rem;
+    color: black;
+}
+
+.top-page{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+.part1{
+    background-color: #2b2929;
+    color: white;
+    padding: 2.5rem;
+    padding-bottom: 5rem;
+}
+.part1 h1{
+    line-height: 3rem;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: #f7f5f2;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+.part1 p{
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+}
+.part1 a{
+    font-size: 1.2rem;
+    background-color: #0d5fe2;
+    padding: 1.5rem 2rem;
+    color: black;
+    border-radius:20px;
+    text-decoration: none;
+}
+.part2{
+    background-color: #1e1919;
+    padding: 15% 10% 10% 10%;
+}
+
+.top{
+    background-color: #f7f5f2;
+    padding: 7% 4%;
+    text-align: center;
+    color: #1e1919;
+}
+.top h1{
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.top p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.items{
+    margin: 5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+    gap: 2rem;
+}
+.item{
+    background-color: #f7f5f2;
+    padding: 1.5rem;
+    border-radius: 15px;
+    line-height: 3rem;
+}
+
+.goals-section{
+    background-color: #f7f5f2;
+    padding: 3rem;
+}
+.goals-section h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    
+}
+.goals{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-template-rows: auto; 
+    gap: 4rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    line-height: 1.8rem;
+}
+.goal h2{
+    padding-bottom: 1rem;
+}
+.goal img{
+    width: 120px;
+}
+.dropbox-users{
+    background-color: #1e1919;
+    padding: 5% 4%;
+    text-align: center;
+    color: white;
+}
+.dropbox-users h1{
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.testimonials{
+    background-color: #242121;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 6% 7%;
+    gap: 4rem;
+
+}
+.testimonials img{
+    width: 90%;
+    height: 100%;
+}
+.testimonials-text{
+    color: white;
+    margin-top: 20%;
+    line-height: 1.5rem;
+}
+.testimonials-text a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.testimonials h2{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonials h3{
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+.testimonials p{
+    font-weight: lighter;
+    color: lightgray;
+
+}
+#dropbox-use{
+    background-color: #1e1919;
+}
+.dropbox-use{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 2rem;
+    
+}
+.use{
+    background-color: #2b2929;
+    color: white;
+}
+.use-text{
+    margin: 2.5rem 1.8rem;
+}
+
+.use-text h1{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+.use-text p{
+    margin-bottom: 3.5rem;
+}
+.use-text a{
+    color: black;
+    font-size: 1.2rem;
+    background-color: #4d90ff;
+    border-radius: 20px;
+    padding: .8rem 1rem;
+}
+.use img{
+    width: 100%;    
+}
+
+#bottom-h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+/* REGISTER PAGE  */
+
+.register-form{
+    width: 25rem;
+    margin: 10rem auto 0;
+    padding: 20px;
+    text-align: center;
+}
+.register-form h1{  
+    text-align: left;
+    font-family: 'poppins' sans-serif;
+    font-weight: 200;
+}
+.register-form input{
+    outline: none;
+    border: solid 1px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: .56rem;
+    width: 100%;
+}
+.register-form hr{
+    width: 100%;
+    /* margin-left: 5%; */
+    margin-top: 10px;
+}
+.or{
+    background-color: white;
+    width: 30px;
+    margin: -10px auto 10px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+.register-form img{
+    width: 1.3rem;
+}
+span{
+    padding-left: 3rem;
+}
+.register-form button{
+    width: 100%;
+    margin: 10px 0 10px;
+    padding: 10px 0;
+    font-size: .9rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.register-form h3{
+    text-align: left;
+    font-weight: 100;
+    font-size: .9rem;
+    padding-left: 5%;
+}
+.register-form .continue-btn{
+    background-color: #0057e5;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+/* GET STARTED PAGE  */
+.main-content {
+    margin-top: 4rem; 
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #1e1919;
+}
+.main-content p{
+    font-size: 1.1rem;
+}
+.items{
+    position: relative;
+}
+.items .features{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0.5rem;
+}
+.container{
+    margin: 7rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+    gap: 2rem;
+}
+.free-enterprise{
+    background-color: #faf9f7;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    line-height: 1.5rem;
+    position: relative;
+}
+.free-enterprise h1, h2{
+    margin-bottom: 1rem;
+}
+.free-enterprise h1{
+    font-size: 2rem;
+}
+.free-enterprise h2{
+    color: gray;
+    font-size: 1.2rem;
+}
+.free-enterprise p{
+    font-weight: 50;
+    margin-bottom: 3rem;
+    font-size: .9rem;
+}
+.free-enterprise a{
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    padding:  5px 10px;
+    bottom: 2rem;
+    color: black;
+    font-weight: bold;
+}
+ /* INTERGRATIONS FOOTER  */
+.first-content-container{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.text-part{
+    background-color: #1e1919;
+    color: white;
+    padding: 2.5rem;
+    padding-bottom: 5rem;
+}
+.text-part h1{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin-bottom: 1.5rem;
+}
+.text-part p{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.text-part a{
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
+    background-color: #4d90ff;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.first-content-container img{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+#partners-section{
+    background-color: #f7f5f2;
+}
+#partners-section h1{
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    color: #1E1919;
+    text-align: center;
+    padding: 3rem;
+}
+
+.partners{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2rem;
+    gap: 50px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.partner img{
+    width: 50px;
+    padding-bottom: 10px;
+
+}
+.partner p{
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+.partner a{
+    color: black;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.our-values{
+    background-color: #1e1919;
+}
+.offers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    padding-top: 5rem;
+}
+.offer-text{
+    color: white;
+    padding: 7rem 5rem 5rem 12rem;
+    line-height: 1.6rem;
+}
+
+.offer-text h3{
+    padding-bottom: 1.25rem;
+}
+.offer-text h1{
+    line-height: 2.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.offer-text p{
+    font-size: 1.1rem;
+    padding-top: 1.25rem;
+}
+.offer-text button{
+    margin-top: 2.8rem;
+    border: 2px solid white;
+    text-align: left;
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    background: transparent;
+}
+.creative-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position:center;
+}
+
+.DBX-section{
+    background-color: #f7f5f2;
+}
+.DBX-img{
+    width: 120%;
+    height: 100vh;
+    object-fit: cover;
+    object-position:center;
+}
+.DBX{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+}
+.DBX-text{
+    color: black;
+    padding: 7rem 5rem 5rem 12rem;
+    line-height: 1.6rem;
+}
+.DBX-text h3{
+    padding-bottom: 1.25rem;
+}
+.DBX-text h1{
+    line-height: 2.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.DBX-text p{
+    font-size: 1.1rem;
+    padding-top: 1.25rem;
+    margin-bottom: 3rem;
+}
+.DBX-text a{
+    margin-top: 2.8rem;
+    border: 2px solid black;
+    text-align: left;
+    padding: 1.5rem 1rem;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    background: transparent;
+}
+
+
+/* ABOUT US PAGE  */
+
+.our-mission{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+}
+.text{
+    height: 100%;
+    background-color: #1E1919;
+    padding: 30% 10%;
+}
+.text h1{
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+}
+.our-mission-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+.our-story{
+    padding: 4rem 20%;
+    background-color: #f7f5f2;
+}
+.our-story h1{
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.our-story p{
+    line-height: 1.5rem;
+    font-size: .95rem;
+    padding: 2rem;
+    font-weight: 100;
+    color: #1E1919;
+}
+.our-story a{
+    color: #0d5fe2;
+}
+#teams-section{
+    background-color: #1e1919;
+}
+#teams-h1{
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+    padding: 3%;
+}
+
+.team-text{
+    line-height: 1.5rem;
+    color: white;
+    padding: 1rem 1rem 1rem 0;
+}
+.team-text h1{
+    padding-bottom: 1rem;
+}
+.team img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+#directors-section{
+    background-color: #f7f5f2;
+}
+#directors-h1{
+    padding: 3rem;
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+}
+.directors{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+    padding: 3%;
+}
+.director-text{
+    line-height: 1.5rem;
+    color: black;
+    padding: 1rem 1rem 1rem 0;
+}
+.director-text h1{
+    padding-bottom: 1rem;
+}
+.director img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/* FOOTER SECTION  */
+.footer{
+    background-color: black;
+    padding: 3rem;
+}
+.footer-items ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+.footer hr{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 1.5rem;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 500px){
+    .home-nav-link{
+        display: block;
+    }
+    .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 0;
+        background-color: white;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+    .primary-navigation[data-visible = "true"] {
+        transform: translateX(0%);
+    }
+    .primary-navigation ul{
+        flex-direction: column;
+    }
+    .primary-navigation li{
+        padding: 1rem;
+    }
+    #get-started-btn{
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 90%;
+        bottom: 3rem;
+        position: absolute;
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        background: url(./media/images/icon-hamburger.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        width: 5rem;
+        aspect-ratio: 1;
+        border: none;
+        top: 1.5rem;
+        right: -2em;
+        z-index: 9999;
+    }
+    .mobile-nav-toggle[aria-expanded= "true"]{
+        background: url(./media/images/icon-close.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+    h1{
+        font-size: 2rem !important;
+        line-height: normal !important;
+        /* font-weight: 600 !important;   */
+    }
+    p{
+        font-size: 1.2rem !important;
+        /* line-height: 1.95rem !important; */
+
+    }
+    .company-logo h2{
+        display: none;
+    }
+    .part2{
+        width: 100%;
+        height: 100%;
+    }
+    .item a{
+        width: 100%;
+        padding-right: 40%;
+    }
+    .testimonials{
+        gap: 0.5rem;
+    }
+    .testimonials img{
+        height: 80%;
+    }
+    .testimonials-text{
+        margin-top: 0;
+    }
+    .dropbox-use{
+        padding: 0;
+    }
+    .text-part{
+        height: auto;
+    }
+    .first-content-container img{
+        width: 100%;
+        height: auto;
+    }
+    .offer-text, .DBX-text{
+        padding: 1rem 5rem !important;
+        line-height: 2rem;
+        position: relative;
+        left: -3.5rem;
+    }
+    .offer-text button{
+        width: 100%;
+    }
+    .our-mission-img{
+        width: 100%;
+        height: auto;
+    }
+    .creative-img{
+        width: 100%;
+        height: auto;
+    }
+    .DBX-img{
+        width: 100%;
+        height: auto;
+    }
+    #offer-text-others{
+        order: 1;
+    }
+    #offer-image{
+        order: 2;
+    }
+    #DBX-image{
+        order: 2;
+    }
+    #DBX-text{
+        order: 1;
+    }
+    .register-form{
+        width: 100%;
+        margin: 10rem auto 0;
+        text-align: center;
+    }
+}
